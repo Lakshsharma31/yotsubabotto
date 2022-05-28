@@ -14,12 +14,12 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            'https://a.uguu.se/ldNXGBKP.mp4'
+            'https://telegra.ph/file/04529ffd0ceb587b9abf2.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: `Do you mean *${this.client.config.prefix}help*? \n` }
+            caption: `𝐍𝐨 𝐬𝐮𝐜𝐡 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 🤖𝐤𝐢𝐝 𝐡𝐚𝐯𝐞 𝐲𝐨𝐮 𝐞𝐯𝐞𝐫 𝐬𝐞𝐞𝐧 𝐬𝐨𝐦𝐞𝐨𝐧𝐞𝐬 𝐮𝐬𝐢𝐧𝐠 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 *${this.client.config.prefix}help*? \n` }
         )
     }
 }
